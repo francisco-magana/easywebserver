@@ -4,10 +4,12 @@ const hbs = require('hbs');
 const axios = require('axios');
 const path = require('path');
 const { addUser } = require('../controllers/createUser');
+const cors = require('cors');
 
 app.set('view engine', 'hbs');
 app.set('views', 'src/views');
 app.use(express.static(path.join(__dirname,'../../public/')))
+app.use(cors());
 
 const port = process.env.PORT || 3000;
 app.set('port', port);
