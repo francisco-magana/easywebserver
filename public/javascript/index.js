@@ -5,7 +5,7 @@ document
 		let email = document.getElementById('usuario-field').value;
 		let password = document.getElementById('password-field').value;
 		let usuarioToSend = {
-			email,
+			usuario,
 			password,
 		};
 
