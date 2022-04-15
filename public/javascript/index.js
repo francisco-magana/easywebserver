@@ -10,7 +10,7 @@ document
 		};
 
 		$.ajax({
-			url: `/create`,
+			url: `https://easywebserver.herokuapp.com/create`,
 			type: 'POST',
             dataType: 'json',
             contentType: 'application/json',
